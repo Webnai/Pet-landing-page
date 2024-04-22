@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'SF Pro Display';
+  src: url('/src/fonts/SF-Pro-Text-Bold.otf') format('opentype');
+  src: url('/src/fonts/SF-Pro-Text-BoldItalic.otf') format('opentype');
+  src: url('/src/fonts/SF-Pro-Text-Heavy.otf') format('opentype');
+  src: url('/src/fonts/SF-Pro-Text-HeavyItalic.otf') format('opentype');
+  src: url('/src/fonts/SF-Pro-Text-Light.otf') format('opentype');
+  src: url('/src/fonts/SF-Pro-Text-LightItalic.otf') format('opentype');
+  src: url('/src/fonts/SF-Pro-Text-Medium.otf') format('opentype');
+  src: url('/src/fonts/SF-Pro-Text-MediumItalic.otf') format('opentype');
+  src: url('/src/fonts/SF-Pro-Text-Regular.otf') format('opentype');
+  src: url('/src/fonts/SF-Pro-Text-RegularItalic.otf') format('opentype');
+  src: url('/src/fonts/SF-Pro-Text-Semibold.otf') format('opentype');
+      
+}
+
+:root {
+  font-family: 'SF Pro Display';
+  
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #183DFF;
+
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  color: #AEBBFF;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #183DFF;
+}
+
+button {
+  border-radius: 100px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #f9f9f9;
+  color: #183DFF;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #081555;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #f9f9f9;
+    background-color: #183DFF;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
