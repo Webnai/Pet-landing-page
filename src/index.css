@@ -18,6 +18,22 @@
       
 }
 
+@font-face {
+  font-family: 'Optima';
+  src: url('/src/fonts/Optima/OptimaLTPro-Black.otf') format('opentype');
+  src: url('/src/fonts/Optima/OptimaLTPro-BlackItalic.otf') format('opentype');
+  src: url('/src/fonts/Optima/OptimaLTPro-Bold.otf') format('opentype');
+  src: url('/src/fonts/Optima/OptimaLTPro-BoldItalic.otf') format('opentype');
+  src: url('/src/fonts/Optima/OptimaLTPro-DemiBold.otf') format('opentype');
+  src: url('/src/fonts/Optima/OptimaLTPro-DemiBoldItalic.otf') format('opentype');
+  src: url('/src/fonts/Optima/OptimaLTPro-ExtraBlack.otf') format('opentype');
+  src: url('/src/fonts/Optima/OptimaLTPro-ExtraBlackIta.otf') format('opentype');
+  src: url('/src/fonts/Optima/OptimaLTPro-Italic.otf') format('opentype');
+  src: url('/src/fonts/Optima/OptimaLTPro-Medium.otf') format('opentype');
+  src: url('/src/fonts/Optima/OptimaLTPro-MediumItalic.otf') format('opentype');
+  src: url('/src/fonts/Optima/OptimaLTPro-Roman.otf') format('opentype');
+}
+
 :root {
   font-family: 'SF Pro Display';
   
@@ -36,7 +52,7 @@ a {
   text-decoration: inherit;
 }
 a:hover {
-  color: #183DFF;
+  color: #f9f9f9;
 }
 
 button {
