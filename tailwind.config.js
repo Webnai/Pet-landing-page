@@ -5,6 +5,9 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
+    fontFamily: {
+      optima: ["Optima", "sans-serif"],
+    },
     extend: {
       screens: {
         xs: "450px",
