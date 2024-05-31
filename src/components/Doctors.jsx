@@ -5,7 +5,7 @@ import doctorBg from "../assets/doctors-bg.png";
 const Doctors = () => {
   return (
     <div className="w-[85%] m-auto rounded-3xl mt-20">
-      <h1 className="text-[48px] w-[65%] mb-10">
+      <h1 className="text-[48px] w-[60%] mb-10">
         Our doctors provide a wide range of services, from routine check-ups
       </h1>
 
@@ -14,7 +14,7 @@ const Doctors = () => {
         <div className="flex flex-col justify-between w-[50%] p-[40px]">
 
             <div>
-                <p>
+                <p className="text-[24px]">
                     Our veterinarians have completed extensive training and education in
                     veterinary medicine, including a Doctor of Veterinary Medicine (DVM)
                     degree from an accredited veterinary school.

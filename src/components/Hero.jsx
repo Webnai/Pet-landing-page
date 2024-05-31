@@ -18,7 +18,7 @@ const Hero = () => {
     <div className="w-[85%] mb-[46px] m-auto">
       <div>
         <div className="lg:flex lg:flex-row flex flex-col items-center justify-center lg:gap-6 ">
-          <h1 className="text-[60px] lg:text-[100px] text-white font-optima font-extrabold">
+          <h1 className="text-[60px] xl:text-[140px] lg:text-[100px] text-white font-optima font-extrabold">
             We are Pet.
           </h1>
 

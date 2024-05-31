@@ -1,5 +1,6 @@
 import './App.css'
 import Doctors from './components/Doctors'
+import Equipment from './components/Equipment'
 import Hero from './components/Hero'
 import Navbar from './components/Navbar'
 import Services from './components/Services'
@@ -12,6 +13,7 @@ function App() {
       <Hero/>
       <Services/>
       <Doctors/>
+      <Equipment/>
     </>
   )
 }

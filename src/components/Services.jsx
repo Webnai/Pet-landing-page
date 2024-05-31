@@ -101,7 +101,7 @@ const Services = () => {
         <div className="bg-[#183DFF] m-0 p-0 rounded-2xl w-[392px] ">
           <div className="flex bg-[#3051FF]  justify-center rounded-2xl">
             <div className="flex relative">
-              <img src={cat3} className="mt-[-40%] h-[305px] object-cover"></img>
+              <img src={cat3} className="mt-[-40%] h-[320px] object-cover"></img>
               <img
                 src={cat3Heart1}
                 className="absolute top-9 left-8"
@@ -112,7 +112,7 @@ const Services = () => {
 
           <div className="p-6">
             <p className="text-[24px] mb-4">Surgery for pets</p>
-            <p className="mb-4">
+            <p className="mb-4 h-[96px]">
             Pet surgery refers to medical procedures performed on animals under anesthesia by a licensed veterinarian.
             </p>
             <button className="rounded-2xl bg-[#183DFF] text-white border-white w-full">
