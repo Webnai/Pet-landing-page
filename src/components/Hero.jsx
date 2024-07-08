@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useRef } from "react";
+import { Typewriter } from 'react-simple-typewriter';
 import cat1 from "../assets/Cat-hero.png";
 import phone from "../assets/Phone.svg";
 import arrowUp from "../assets/arrow-up-right.svg";
@@ -14,21 +15,31 @@ import map from "../assets/map-pin.svg";
 import tail from "../assets/tail.svg";
 
 const Hero = () => {
+  const myAppRef = useRef(null);
+
   return (
-    <div className="w-[85%] mb-[46px] m-auto">
+    <div ref={myAppRef} className="w-[85%] mb-[46px] m-auto">
       <div>
         <div className="lg:flex lg:flex-row flex flex-col items-center justify-center lg:gap-6 ">
-          <h1 className="text-[60px] xl:text-[140px] lg:text-[100px] text-white font-optima font-extrabold">
-            We are Pet.
-          </h1>
-
-          <div className="inline-flex rounded-3xl self-center p-4 bg-[#3051FF] hover:bg-black hover:cursor-pointer text-[18px] ">
+          <div style={{ fontFamily: "optima", color: "white", fontWeight: 700, fontSize: "140px" }}>
+            We
+            <Typewriter
+              words={[' are Pet.']}
+              loop={true}
+              cursor={true}
+              cursorStyle=''
+              typeSpeed={100}
+              deleteSpeed={50}
+              delaySpeed={6000}
+            />
+          </div>
+          <div className="inline-flex rounded-3xl self-center p-4 bg-[#3051FF] hover:-mt-[4px] hover:border-white border border-hidden hover:border-solid hover:cursor-pointer text-[18px] ">
             <img src={phone}></img>
             +1 234 567 890
           </div>
         </div>
 
-        <h1 className="text-[30px] lg:text-[56px] m-auto text-center">
+        <h1 className="text-[30px] font-bold lg:text-[56px] m-auto text-center">
           Caring Vets, Healthy Pets - Trust Us
         </h1>
       </div>
@@ -48,7 +59,7 @@ const Hero = () => {
                 dedicated to providing high-quality medical care for pets.
               </p>
               <div className="inline-flex items-center bg-white text-[#183DFF] rounded-3xl p-1 gap-3">
-                <p className="font-[16px] pl-8">Services</p>
+                <p className="font-bold pl-8">Services</p>
                 <div className="bg-[#183DFF] rounded-full p-2">
                   <img src={arrowUp}></img>
                 </div>
@@ -56,41 +67,41 @@ const Hero = () => {
             </div>
           </div>
 
-          <div className="inline-flex bg-[#3051FF] p-4 rounded-full">
+          <div className="inline-flex bg-[#3051FF] items-center gap-1 p-4 rounded-full">
             <img src={map}></img>
             <p className="text-[12px] lg:text-[14px]">2715 Ash Dr. San Jose, South Dakota 83475</p>
           </div>
         </div>
 
-        
+
         <div className="lg:flex w-[50%] gap-6 relative">
 
-            <div className="flex flex-col mt-[40px] w-[300px]">
-              <div className="bg-white rounded-3xl relative">
-                <img src={dog}className="mt-[-40px]"></img>
-                <img src={dogHeart1} className="absolute top-28 left-3"></img>
-                <img src={dogHeart2} className="absolute top-16 right-2"></img>
-              </div>
-              <p>Trust us to be your go-to vet clinic for all your pet's healthcare needs.</p>
+          <div className="flex flex-col mt-[40px] w-[300px]">
+            <div className="bg-white rounded-3xl relative">
+              <img src={dog} className="mt-[-40px]"></img>
+              <img src={dogHeart1} className="absolute top-28 left-3"></img>
+              <img src={dogHeart2} className="absolute top-16 right-2"></img>
+            </div>
+            <p>Trust us to be your go-to vet clinic for all your pet's healthcare needs.</p>
+          </div>
+
+          <div className="flex flex-col  lg:mt-[-20px] right-0">
+            <div className="bg-[#3051FF] mt-10 rounded-3xl mb-2 relative">
+              <img src={tail} className="absolute h-[200px] lg:h-auto right-[-45%] -z-0"></img>
+              <img src={cat2} className="mt-[-40px] "></img>
+              <img src={cat2heart1} className="absolute top-20 lg:top-32 left-3"></img>
+              <img src={cat2heart2} className="absolute top-8 lg:top-16 right-4"></img>
             </div>
 
-            <div className="flex flex-col  lg:mt-[-20px] right-0">
-              <div className="bg-[#3051FF] mt-10 rounded-3xl mb-2 relative">
-                <img src={tail} className="absolute h-[200px] lg:h-auto right-[-45%] -z-0"></img>
-                <img src={cat2}className="mt-[-40px] "></img>
-                <img src={cat2heart1} className="absolute top-20 lg:top-32 left-3"></img>
-                <img src={cat2heart2} className="absolute top-8 lg:top-16 right-4"></img>
+            <div className="inline-flex self-start items-center bg-white text-[#183DFF] rounded-3xl p-1 gap-3">
+              <p className="font-bold pl-8">Reviews</p>
+              <div className="bg-[#183DFF] rounded-full p-2">
+                <img src={arrowUp}></img>
               </div>
+            </div>
 
-              <div className="inline-flex self-start items-center bg-white text-[#183DFF] rounded-3xl p-1 gap-3">
-                <p className="font-[16px] pl-8">Reviews</p>
-                <div className="bg-[#183DFF] rounded-full p-2">
-                  <img src={arrowUp}></img>
-                </div>
-              </div>
-
-            </div>   
-          </div>    
+          </div>
+        </div>
       </div>
     </div>
   );

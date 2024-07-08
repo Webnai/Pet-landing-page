@@ -23,8 +23,8 @@ const Navbar = () => {
             <li
               key={link.id}
               className={`${
-                active === link.title ? "text-[#f9f9f9]" : "text-[#AEBBFF"
-              } text-[18px] cursor-point`}
+                active === link.title ? "text-[#f9f9f9]" : "text-[#AEBBFF]"
+              } text-[18px] hover:font-bold cursor-point`}
               onclick={() => SetActive(link.title)}
             >
               <a href={`#${link.id}`}>{link.title}</a>
@@ -33,11 +33,11 @@ const Navbar = () => {
         </ul>
       </div>
 
-      <div className="lg:flex gap-4 hidden">
-        <button className="lg:bg-[#183DFF] hover:bg-[white] hover:border-[#183DFF] hover:text-[#183DFF] text-white border-white">
+      <div className="lg:flex gap-4 hidden font-bold">
+        <button className="lg:bg-[#183DFF] hover:bg-white hover:border-blue hover:text-blue text-white border-white">
           Questionaire
         </button>
-        <button className="w-32 hover:text-white">
+        <button className="w-32 hover:text-white hover:bg-blue  hover:border-white">
           Free Call
         </button>
       </div>
