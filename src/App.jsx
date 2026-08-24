@@ -1,4 +1,3 @@
-import './App.css'
 import Doctors from './components/Doctors'
 import Equipment from './components/Equipment'
 import Hero from './components/Hero'
