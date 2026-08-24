@@ -73,21 +73,6 @@
   font-style: normal;
 }
 
-@keyframes fadeInUp {
-  0% {
-    opacity: 0;
-    transform: translateY(100%);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-.fadeUpContainer {
-  animation: fadeInUp 2s ease-out;
-}
-
 :root {
   font-family: 'SF Pro Display';
 
