@@ -40,18 +40,37 @@
 
 @font-face {
   font-family: 'Optima';
-  src: url('/src/fonts/Optima/OptimaLTPro-Black.otf') format('opentype');
-  src: url('/src/fonts/Optima/OptimaLTPro-BlackItalic.otf') format('opentype');
-  src: url('/src/fonts/Optima/OptimaLTPro-Bold.otf') format('opentype');
-  src: url('/src/fonts/Optima/OptimaLTPro-BoldItalic.otf') format('opentype');
-  src: url('/src/fonts/Optima/OptimaLTPro-DemiBold.otf') format('opentype');
-  src: url('/src/fonts/Optima/OptimaLTPro-DemiBoldItalic.otf') format('opentype');
-  src: url('/src/fonts/Optima/OptimaLTPro-ExtraBlack.otf') format('opentype');
-  src: url('/src/fonts/Optima/OptimaLTPro-ExtraBlackIta.otf') format('opentype');
-  src: url('/src/fonts/Optima/OptimaLTPro-Italic.otf') format('opentype');
-  src: url('/src/fonts/Optima/OptimaLTPro-Medium.otf') format('opentype');
-  src: url('/src/fonts/Optima/OptimaLTPro-MediumItalic.otf') format('opentype');
   src: url('/src/fonts/Optima/OptimaLTPro-Roman.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Optima';
+  src: url('/src/fonts/Optima/OptimaLTPro-Medium.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Optima';
+  src: url('/src/fonts/Optima/OptimaLTPro-DemiBold.otf') format('opentype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Optima';
+  src: url('/src/fonts/Optima/OptimaLTPro-Bold.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Optima';
+  src: url('/src/fonts/Optima/OptimaLTPro-Black.otf') format('opentype');
+  font-weight: 800;
+  font-style: normal;
 }
 
 @keyframes fadeInUp {
@@ -71,7 +90,6 @@
 
 :root {
   font-family: 'SF Pro Display';
-  
 
   color-scheme: light dark;
   color: white;
@@ -80,6 +98,16 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  overflow-x: clip;
+  width: 100%;
 }
 
 a {

@@ -8,8 +8,10 @@ import Charity from './components/Charity'
 import Reviews from './components/Reviews'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
+import useButtonHoverFX from './hooks/useButtonHoverFX'
 
 function App() {
+  useButtonHoverFX()
 
   return (
     <>
